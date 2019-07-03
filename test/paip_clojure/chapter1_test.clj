@@ -96,11 +96,11 @@
 (deftest exercise1.3
   (testing "Exercise 1.3"
     (is (= (count-atoms '(a (b) c)) 3))
-    (is (= (count-atoms '(a nil c)) 3))
-    (is (= (count-atoms '(a () c)) 3))
+    (is (= (count-atoms '(a nil c)) 2))
+    (is (= (count-atoms '(a () c)) 2))
     (is (= (count-all-atoms '(a (b) c)) 3))
-    (is (= (count-all-atoms '(a nil c)) 3))
-    (is (= (count-all-atoms '(a () c)) 3))))
+    (is (= (count-all-atoms '(a nil c)) 2))
+    (is (= (count-all-atoms '(a () c)) 2))))
 
 ;(deftest exercise1.4
 ;  (testing "Exercise 1.4"
